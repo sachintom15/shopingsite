@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminmaster.master.cs" Inherits="shopingsite.admin.adminmaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    
+     <style>
+
+        nav{
+    background-color:cornflowerblue;
+    height:50px;
+}
+nav ul{
+    text-align:center;
+   
+}
+    nav li {
+        display: inline-block;
+        margin-top: 1%;
+    }
+
+nav li a{
+    color:white;
+    text-decoration:none; 
+    padding:0px 60px;
+   
+}
+
+nav li a:hover{
+    color:deeppink;
+    transition:all 0.4S ;
+}
+
+
+footer{
+     background-color:cornflowerblue;
+    height:100px;
+    margin-top:29px;
+}
+footer p {
+    color:white;
+    text-align:center;
+  
+}
+
+
+
+footer p a {
+    color:white;
+}
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+
+
+    <nav>
+                    <ul>
+                        <li><a href="AdminHome.aspx">Home</a></li>
+                         <li><a href="productreg.aspx">Product Registration</a></li>
+                        <li><a href="viewuser.aspx">View User</a></li>
+                         
+                        <li><a href="ComplaintView.aspx">Complaint View</a></li>
+                        <li><a href="queryview.aspx">Query view</a></li>
+                        <li><a href="../guest/default.aspx">Log-out</a></li>
+                       
+                    </ul>
+
+            </nav>
+    </head>
+<body>
+
+
+
+
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <footer >
+                  
+             <p>© 2022 Shoping site. All rights reserved | Designed by <a href="#">Sachin Tom(Nest Digitals)</a></p>
+
+
+
+           </footer>
+    </form>
+</body>
+</html>
